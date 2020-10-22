@@ -29,5 +29,5 @@ learn.save(model_dir, return_path=True)
 ## Step 3
 Test your model
 ```python
-acc=fastai_test(img_dir,model_dir,'resnet50',512,labels,tfms)
+acc=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],tfms)
 ```
