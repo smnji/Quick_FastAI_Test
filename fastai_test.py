@@ -7,7 +7,7 @@ from torchvision import transforms
 def fastai_test(path_img,path_model,model_type,img_size,labels,tfms):
   # data path
   datapath = path_img
-  modelpath = path_model
+  modelpath = os.path.splitext(path_model)[0]
   # list to hold images path
   img_names = []
   img_paths = []
