@@ -46,9 +46,6 @@ def fastai_test(path_img,path_model,model_type,img_size,labels,tfms):
                                 ,valid_pct = 0
                                 ).normalize(imagenet_stats) # normalize images
 
-  # show labels
-  print(dataset.classes)
-
   # define the model
   if model_type=='resnet50': model = models.resnet50 
   elif model_type=='resnet34': model = models.resnet34
