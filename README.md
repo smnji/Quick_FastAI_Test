@@ -1,6 +1,6 @@
 # Quick_FastAI_Test
-A script that helps to quickly test using fastAI. 
-You can use this as a probe to test more frequently a CNN classifier, inorder to aviod overfitting. Simply link the model, and the testing set.
+A script that helps quickly test through the "fastAI" library. 
+You can use this as a probe to test more frequently a CNN classifier, to avoid overfitting. Simply, link the model and the testing set.
 -Usage:
 ```python
 fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms) 
