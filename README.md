@@ -1,7 +1,13 @@
 # Quick_FastAI_Test
 A script that helps to quickly test using fastAI.  
--Usage: fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms) 
--Example:Testing_Accuracy=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],None) 
+-Usage:
+```python
+fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms) 
+```
+-Example:
+```python
+Testing_Accuracy=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],None) 
+```
 ## Step 1
 ```python
 !git clone https://github.com/samnaji/Quick_FastAI_Test.git
