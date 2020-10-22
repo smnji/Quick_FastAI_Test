@@ -1,6 +1,7 @@
 # Quick_FastAI_Test
 A script that helps quickly test through the "fastAI" library. 
 You can use this as a probe to test more frequently a CNN classifier, to avoid overfitting. Simply, link the model and the testing set.
+
 -Usage:
 ```python
 fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms) 
@@ -10,6 +11,7 @@ fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms)
 Testing_Accuracy=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],None) 
 ```
 ## Step 1
+Run once in your notebook.
 ```python
 !git clone https://github.com/samnaji/Quick_FastAI_Test.git
 sys.path.append('/content/Quick_FastAI_Test')
