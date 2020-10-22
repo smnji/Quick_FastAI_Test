@@ -24,10 +24,10 @@ Train and save your model
 model = models.resnet50
 learn = cnn_learner(dataset, model, metrics=accuracy)
 learn.fit_one_cycle(25)
-learn.save(model_dir,return_path=True)
+model_path=learn.save(model_dir,return_path=True)
 ```
 ## Step 3
 Test your model
 ```python
-acc=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],tfms)
+acc=fastai_test(img_dir,model_path,'resnet50',512,['light','medium','dark'],tfms)
 ```
