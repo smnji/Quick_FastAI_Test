@@ -24,7 +24,7 @@ Train and save your model
 model = models.resnet50
 learn = cnn_learner(dataset, model, metrics=accuracy)
 learn.fit_one_cycle(25)
-learn.save(model_dir, return_path=True)
+learn.save(model_dir,return_path=True)
 ```
 ## Step 3
 Test your model
