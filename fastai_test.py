@@ -19,8 +19,6 @@ def fastai_test(path_img,path_model,model_type,img_size,labels,tfms):
           f_path = os.path.join(root,f)
           f_label = os.path.split(root)[-1]
           if not f_label in (labels): continue  
-        #if f_label == '.comments' or f_label == 'burn'  : continue
-        #rec = f'{f_path},{f_label}'
           img_names.append(f)
           img_paths.append(f_path)
           img_labels.append(f_label)
