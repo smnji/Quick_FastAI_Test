@@ -54,7 +54,7 @@ def test_model(learn):
   return  acc
 
 def quick_fastAI_test(path_img,path_model,img_size,labels,tfms):
-  drive.mount('/content/drive')
+  #drive.mount('/content/drive')
   # data path
   datapath = path_img
   modelpath = path_model
