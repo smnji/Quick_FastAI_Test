@@ -10,7 +10,7 @@ fastai_test(img_dir,model_dir,learner_type,img_size,labels,tfms)
 ```
 -Example:
 ```python
-Testing_Accuracy=fastai_test(img_dir,model_dir,'resnet50',512,['light','medium','dark'],None) 
+Testing_Accuracy=fastai_test(img_dir,model_dir,'resnet50',512,['apples','oranges'],None) 
 ```
 ## Step 1
 Run once in your notebook.
@@ -31,5 +31,5 @@ model_path=learn.save(model_dir,return_path=True)
 ## Step 3
 Test your model
 ```python
-acc=fastai_test(img_dir,model_path,'resnet50',512,['light','medium','dark'],tfms)
+acc=fastai_test(img_dir,model_path,'resnet50',512,['apples','oranges'],tfms)
 ```
